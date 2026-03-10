@@ -131,14 +131,12 @@ The website is deployed on an Ubuntu server using the Nginx web server.
 PHP processing is enabled through **PHP-FPM** by modifying the default Nginx configuration file.
 
 Project files are placed inside:
+cd /var/www/html
+```
 
-```
-/var/www/html
-```
 Configuration file edited:
-
-```
 sudo nano /etc/nginx/sites-enabled/default
+
 ```
 
 ### Nginx PHP Configuration

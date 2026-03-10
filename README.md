@@ -52,14 +52,25 @@ travel-website/
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Install Required Packages
+### 1️⃣ Launch a Server
+
+Deploy an Ubuntu server instance (pdf of launch-server).  
+
+Connect via SSH:
+
+```bash
+ssh -i downloads/key-name ubuntu@your-server-ip
+```
+
+
+### 2️⃣ Install Required Packages
 
 ```bash
 sudo apt update
 sudo apt install nginx mysql-server php-fpm php-mysql
 ```
 
-### 2️⃣ Create Database
+### 3️⃣Create Database
 Login to MySQL:
 
 ```bash

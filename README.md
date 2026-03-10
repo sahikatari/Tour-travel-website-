@@ -167,9 +167,7 @@ http://your-server-ip
 - Deploying a website on Ubuntu using Nginx
 - Handling user input through forms
 
----
 
-```
 
 
 

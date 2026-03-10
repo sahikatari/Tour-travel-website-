@@ -67,7 +67,7 @@ ssh -i downloads/key-name ubuntu@your-server-ip
 
 ```bash
 sudo apt update
-sudo apt install nginx mysql-server php-fpm php-mysql
+sudo apt install nginx mariadb-server php php8.3-fpm php-mysql -y
 ```
 
 ### 3️⃣Create Database

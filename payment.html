@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Payment</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef2f3;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.payment-box{
+background:white;
+padding:30px;
+width:350px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#28a745;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1e7e34;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="payment-box">
+
+<h2>Payment</h2>
+
+<form action="payment.php" method="POST">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="number" name="amount" placeholder="Amount (₹)" required>
+
+<select name="payment_method">
+<option>Credit Card</option>
+<option>Debit Card</option>
+<option>UPI</option>
+</select>
+
+<input type="text" name="card_number" placeholder="Card Number">
+
+<input type="text" name="expiry" placeholder="MM/YY">
+
+<input type="text" name="cvv" placeholder="CVV">
+
+<button type="submit">Pay Now</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

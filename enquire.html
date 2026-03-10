@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Inquiry Form</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-image:url("https://www.fodors.com/wp-content/uploads/2021/02/CanadasNaturalWonders__HERO_shutterstock_214257688.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+height:100vh;
+margin:0;
+}
+
+.container{
+width:400px;
+margin:80px auto;
+background:rgba(255,255,255,0.3); /* transparent box */
+padding:20px;
+border-radius:10px;
+backdrop-filter:blur(5px); /* glass effect */
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+h2{
+text-align:center;
+color:#000;
+}
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input, textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+margin-top:15px;
+padding:10px;
+width:100%;
+background:#28a745;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#218838;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Travel Inquiry Form</h2>
+
+<form action="enquire-submit.php" method="POST">
+
+<label>Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone</label>
+<input type="text" name="phone" required>
+
+<label>Message</label>
+<textarea name="message" rows="4" required></textarea>
+
+<button type="submit">Submit Inquiry</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

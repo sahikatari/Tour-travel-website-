@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Book Travel Package</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.form-box{
+background:white;
+padding:30px;
+width:350px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:100%;
+padding:10px;
+background:#1696b5;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f6f85;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>Book Your Trip</h2>
+
+<form action="book.php" method="POST">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="text" name="phone" placeholder="Phone Number" required>
+
+<select name="destination" required>
+<option value="">Select Package</option>
+<option>Goa Beach Trip</option>
+<option>Manali Adventure</option>
+<option>Kashmir Tour</option>
+<option>Kerala Backwaters</option>
+<option>Dubai Luxury Tour</option>
+<option>Leh Ladakh Adventure</option>
+</select>
+
+<input type="date" name="travel_date" required>
+
+<input type="number" name="persons" placeholder="Number of Persons" required>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

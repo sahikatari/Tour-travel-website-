@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WanderWorld - Travel Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+
+        header{
+            background:rgba(0,0,0,0.7);
+            color:#fff;
+            padding:15px 8%;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:1000;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            font-size:24px;
+            font-weight:700;
+        }
+
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            margin-left:25px;
+            font-weight:500;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#00d4ff;
+        }
+
+
+        .hero{
+            height:100vh;
+            background:url('https://images.squarespace-cdn.com/content/v1/5856bc666a49634cd55b0ba9/1621447946483-Z84T1SF1UN2P9DBZAU5H/most-beautiful-places-in-the-caribbean.jpeg?format=1500w')no-repeat center center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:#fff;
+            padding:20px;
+        }
+
+        .hero-content h2{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:18px;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            padding:12px 30px;
+            background:#00d4ff;
+            border:none;
+            border-radius:25px;
+            color:#fff;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+            text-decoration:none;
+        }
+
+        .btn:hover{
+            background:#009ec3;
+        }
+
+
+        .blog{
+            padding:80px 8%;
+            margin-top:50px;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:50px;
+            font-size:32px;
+            font-weight:700;
+        }
+
+        .blog-container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:#fff;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card-content h3{
+            margin-bottom:10px;
+        }
+
+        .card-content p{
+            font-size:14px;
+            margin-bottom:15px;
+        }
+
+        .read-more{
+            color:#00bcd4;
+            font-weight:600;
+            text-decoration:none;
+        }
+
+
+        footer{
+            background:#111;
+            color:#fff;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            .hero-content h2{
+                font-size:32px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WanderWorld</h1>
+    <nav>
+        <a href="">Home</a>
+        <a href="about-us.html">About-Us</a>
+        <a href="package.html">Our-Package</a>
+        <a href="enquire.html">Contact</a>
+       
+    </nav>
+</header>
+
+<section class="hero">    <div class="hero-content">
+        <h2>Explore The World With Us</h2>
+        <p>Discover beautiful destinations, travel tips, and unforgettable adventures.</p>
+        <a href="package.html" class="btn">Start Exploring</a>
+    </div>
+</section>
+
+<section class="blog">
+    <h2 class="section-title">Latest Travel Stories</h2>
+
+    <div class="blog-container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Taj Mahal">
+        <div class="card-content">
+            <h3>Agra – The Taj Mahal</h3>
+            <p>Witness the timeless beauty of the Taj Mahal and explore the rich Mughal history of Agra.</p>
+           
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" alt="Goa Beach">
+        <div class="card-content">
+            <h3>Goa Beach Getaway</h3>
+            <p>Relax on golden beaches, enjoy vibrant nightlife, and experience Goa’s coastal charm.</p>
+           
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="Kerala">
+        <div class="card-content">
+            <h3>Kerala Backwaters</h3>
+            <p>Drift through serene backwaters, lush greenery, and tranquil houseboat experiences.</p>
+           
+        </div>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    © 2026 WanderWorld Travel Blog | Designed with ❤️
+</footer>
+
+</body>
+</html

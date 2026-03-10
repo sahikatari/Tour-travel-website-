@@ -32,6 +32,23 @@ Users can explore travel packages and submit inquiry forms that are stored in th
 - **Operating System:** Ubuntu Linux  
 
 ---
+## 📂 Project Structure
+
+```
+travel-website/
+│
+├── index.html           # Home page
+├── about.html           # About page
+├── package.html         # Tour packages page
+├── book.html            # Booking form page
+├── payment.html         # Payment page
+├── contact.html         # Contact page
+├── enquire-submit.php   # Handles form submission
+└── database/
+    └── travel_agency.sql   # Database schema
+```
+
+
 
 ## ⚙️ Setup Instructions
 
